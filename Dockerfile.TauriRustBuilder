@@ -7,7 +7,7 @@ RUN apt-get install build-essential -y
 
 
 # install tauri dependencies
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y libwebkit2gtk-4.0-dev build-essential wget libssl-dev libgtk-3-dev libappindicator3-dev librsvg2-dev
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y libwebkit2gtk-4.0-dev wget libssl-dev libgtk-3-dev libappindicator3-dev librsvg2-dev
 
 RUN mkdir -p /user/rust-builder/src
 WORKDIR /user/rust-builder/src
